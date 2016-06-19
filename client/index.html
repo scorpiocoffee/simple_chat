@@ -15,29 +15,34 @@
 
 <!-- chat room -->
 
-<div class="chat-room-wrapper" ng-show="hasLogined" style="font-family: Comic Sans MS;">
-    <div class="online panel" style="background-color: lightgray; border:0;border-radius: 0;">
+<div class="chat-room-wrapper" ng-show="hasLogined">
+    <div class="online panel">
         <div class="panel-heading">
-            <h3 class="panel-title">Online: <span class="user-number"><em>{{users.length-1}}</em></span></h3>
+            <h3 class="panel-title">
+                Online:
+                <span class="user-number">
+                <em>{{users.length-1}}</em>
+                </span>
+            </h3>
         </div>
-        <br>
+        <br> 
         <div class="user-wrapper panel-body">
             <user iscurrentreceiver="receiver===user.nickname" info="user" ng-click="setReceiver(user.nickname)" ng-repeat="user in users"></user>
         </div>
     </div>
 
     <div class="chat-room panel">
-        <div class="panel-heading" style="background-color: lightgray; border:0;border-radius: 0;">
+        <div class="panel-heading">
             <h3 class="panel-title" style="height: 20px;">
             {{receiver?receiver:"Group Room"}}
             </h3>
         </div>
         <div class="message-wrapper panel-body">
-                <message self="nickname" scrolltothis="scrollToBottom()" info="message" ng-repeat="message in messages"></message>
+            <message self="nickname" scrolltothis="scrollToBottom()" info="message" ng-repeat="message in messages"></message>
         </div>
         <div class="panel-footer">
             <form class="post-form form-inline" novalidate name="postform" ng-submit="postMessage()">
-                <input type="text" class="form-control" ng-model="words" required style="height: 50px;">
+                <input type="text" class="form-control" ng-model="words" required>
                 <button type="submit" class="btn btn-success" ng-disabled="postform.$invalid">Send</button>
             </form>
         </div>
