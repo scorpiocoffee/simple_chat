@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "angular": "^1.5.7",
     "body-parser": "^1.15.1",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
