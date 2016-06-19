@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "^1.5.7",
     "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
     "socket.io": "^1.4.6"
