@@ -105,7 +105,7 @@ body {
     border-radius: 0;
 }
 
-.chat-room-wrapper .online .user-number{
+.chat-room-wrapper .online .user-number {
     margin-left: 10px;
     width: 20px;
     height: 20px;
@@ -118,7 +118,8 @@ body {
     line-height: 20px;
     font-size: 13px;
 }
-.chat-room-wrapper .online .user-wrapper{
+
+.chat-room-wrapper .online .user-wrapper {
     background: lightgray;
     overflow: scroll;
     position: absolute;
@@ -128,7 +129,8 @@ body {
     padding: 0;
     background: transparent;
 }
-.chat-room-wrapper .online .user-wrapper .user{
+
+.chat-room-wrapper .online .user-wrapper .user {
     text-align: left;
     border-bottom: solid 1px #ccc;
     padding: 10px 10px;
@@ -136,24 +138,28 @@ body {
     font-size: 18px;
     background: transparent;
 }
-.chat-room-wrapper .online .user-wrapper .user:hover{
+
+.chat-room-wrapper .online .user-wrapper .user:hover {
     background-color: transparent;
 }
-.chat-room-wrapper .online .user-wrapper .user .avatar{
+
+.chat-room-wrapper .online .user-wrapper .user .avatar {
     vertical-align: middle;
 }
-.chat-room-wrapper .online .user-wrapper .user .nickname{
+
+.chat-room-wrapper .online .user-wrapper .user .nickname {
     margin-left: 20px;
     vertical-align: middle;
     font-family: Comic Sans MS;
     color: rgba(0,0,0,.7);
 }
-.chat-room-wrapper .online .user-wrapper .user .unread{
+.chat-room-wrapper .online .user-wrapper .user .unread {
     vertical-align: middle;
     margin-right: 5px;
     color: red;
 }
-.chat-room-wrapper .system-notification{
+
+.chat-room-wrapper .system-notification {
     background-color: lightsalmon;
     display: inline-block;
     padding: 5px 13px;
@@ -162,19 +168,22 @@ body {
     margin-bottom: 10px;
 }
 
-.chat-room-wrapper .normal-message{
+.chat-room-wrapper .normal-message {
     text-align: right;
     margin:0 10px 20px 20px;
 }
-.chat-room-wrapper .normal-message.others{
+
+.chat-room-wrapper .normal-message.others {
     text-align: left;
 }
-.chat-room-wrapper .normal-message .name-wrapper{
+
+.chat-room-wrapper .normal-message .name-wrapper {
     color: slategray;
 }
-.chat-room-wrapper .normal-message .content{
+
+.chat-room-wrapper .normal-message .content {
     display: inline-block;
-    background-color: GhostWhite;
+    background-color: ghostwhite;
     padding: 10px 20px;
     color: rgba(0,0,0,.7);
     border-radius: 3px;
@@ -184,17 +193,19 @@ body {
     min-height: 40px;
     text-align: left;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-
 }
-.chat-room-wrapper .normal-message.others .content-wrapper{
+
+.chat-room-wrapper .normal-message.others .content-wrapper {
     position: relative;
 }
-.chat-room-wrapper .normal-message.others .content{
+
+.chat-room-wrapper .normal-message.others .content {
     position: absolute;
     margin-left: 50px;
-    background-color: lightgray;
+    background-color: ghostwhite;
 }
-.chat-room-wrapper .normal-message.self .content:after,.chat-room-wrapper .normal-message.others .content:before{
+
+.chat-room-wrapper .normal-message.self .content:after,.chat-room-wrapper .normal-message.others .content:before {
     content:'';
     position: absolute;
     width: 0;
@@ -203,16 +214,18 @@ body {
     display: block;
     border:6px solid transparent;
 }
-.chat-room-wrapper .normal-message.self .content:after{
+
+.chat-room-wrapper .normal-message.self .content:after {
     left: 100%;
-    border-left:4px solid #b2e281;
+    border-left:4px solid #fff;
 }
-.chat-room-wrapper .normal-message.others .content:before{
+
+.chat-room-wrapper .normal-message.others .content:before {
     right: 100%;
     border-right:4px solid #fff;
 }
 
-.chat-room-wrapper .avatar{
+.chat-room-wrapper .avatar {
     display: inline-block;
     width:40px;
     height: 40px;
@@ -223,13 +236,16 @@ body {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-.chat-room-wrapper .others .avatar{
+
+.chat-room-wrapper .others .avatar {
     margin-left: 0;
     margin-right: 10px;
 }
-.yes{
+
+.yes {
     color: yellow;
 }
-.no{
+
+.no {
     color: purple;
 }
